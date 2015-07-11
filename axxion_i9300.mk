@@ -14,13 +14,13 @@
 # limitations under the License.
 
 # Inherit Omni GSM telephony parts
-$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, vendor/axxion/config/gsm.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from our omni product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/axxion/config/common.mk)
 
 # This is where we'd set a backup provider if we had one
 #$(call inherit-product, device/sample/products/backup_overlay.mk)
@@ -30,7 +30,7 @@ $(call inherit-product, device/samsung/i9300/device.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := omni_i9300
+PRODUCT_NAME := axxion_i9300
 PRODUCT_DEVICE := i9300
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := Samsung
